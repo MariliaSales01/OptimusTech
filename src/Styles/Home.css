@@ -12,7 +12,7 @@ a{
     display: flex;
     gap: 10px;
     align-items: center;
-    
+
     h1{
         font-size: 1.1rem;
         color: #3A404E;
@@ -23,25 +23,40 @@ a{
     justify-content: space-around;
     align-items: center;
     margin-top: 1%;
+    height: 80px;
+    padding: 0 2rem;
 }
 
 .nav-links{
+    display: flex;   
+    align-items: center;
     ul{
         list-style-type: none;
         display: flex;
         gap: 40px;
-        margin-right: 200px;
     }
 
     li a{
         font-size: 1.1rem;
         color: #667085;
     }
+}
 
+.nav-btn{
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #667085;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .button-header{
     font-size: 1.1rem;
+    padding-left: 300px;
     #cadastre{
         padding: 10px 15px ;
         background-color: #8E2424;
@@ -52,5 +67,64 @@ a{
     #login{
         padding: 10px 20px ;
         color: #667085;
+    }
+}
+
+
+@media (max-width:1024px) {
+    .nav-btn{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    .nav-close-btn{
+        margin-top: 80%;
+        margin-right: 40%;
+        color: #fff;
+        padding: 15px;
+        background-color: black;
+        border-radius: 100%;
+    }
+
+    .button-header{
+        padding-left: 0;
+    }
+
+    .nav-links ul{
+        display: block;
+        
+        li{
+            padding: 10%;
+        }
+
+        a{
+            font-size: 1.5rem;
+            color: #fff;
+        }
+    }
+
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        transition: 1s;
+        transform: translateY(-100vh);
+        background-color: #8E2424;
+    }
+
+    header .responsive_nav{
+        transform: none;
+    }
+
+    .nav-bar{
+        justify-content: space-between;
+        padding: 0;
     }
 }
