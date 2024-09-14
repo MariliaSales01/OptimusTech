@@ -44,11 +44,11 @@ export default function Home() {
             </div>
        </header>
 
-        <section className='AboutUs'>
+        <section className='AboutUs flex'>
             <div className='content-about'>
                 <span>Sobre nós</span>
                 <h2>Por que somos diferentes?</h2>
-                <p>Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente imporrtante para elas.</p>
+                    <p>Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de <br/> todo o mundo a se concentrarem naquilo que é realmente imporrtante para elas.</p>
             </div>
         </section>
       </div>
