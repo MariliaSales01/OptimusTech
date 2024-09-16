@@ -1,7 +1,7 @@
 .Home{
     width: 100%;
     height: 100vh;
-    font-family: 'Popping', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 a{
@@ -84,16 +84,39 @@ a{
     }
 
     h2{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         color: #101828;
     }
     
     p{
         color: #667085;
         line-height: 1.4em;
-        font-size: 1.2rem;
-    }
+        font-size: 1.1rem;
+    } 
+}
+
+.container-benefits{
+    display: flex;
+    justify-content: center;
     
+    .benefits{
+        padding: 30px;
+    }
+    span{
+        color: #8E2424;
+        font-weight:600;
+        font-size: 3.8rem;
+    }
+
+    h3{
+        font-size: 1.1rem;
+        color: #101828;
+        font-weight: 500;
+    }
+
+    p{     
+        color: #667085;
+    }
 }
 
 
@@ -152,5 +175,10 @@ a{
     .nav-bar{
         justify-content: space-between;
         padding: 0;
+    }
+
+    .container-benefits{
+        flex-direction: column;
+        align-items: center;
     }
 }
